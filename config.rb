@@ -11,7 +11,7 @@ javascripts_dir = "assets/javascripts"
 # output_style = :expanded or :nested or :compact or :compressed
 
 # To enable relative paths to assets via compass helper functions. Uncomment:
-# relative_assets = true
+relative_assets = true
 
 # To disable debugging comments that display the original location of your selectors. Uncomment:
 # line_comments = false
@@ -25,4 +25,4 @@ javascripts_dir = "assets/javascripts"
 
 # ブラウザでsassを検証する方法
 # http://liginc.co.jp/designer/archives/11623#a47
-sass_options = {:debug_info => true}
+# sass_options = {:debug_info => true}

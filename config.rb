@@ -23,4 +23,6 @@ javascripts_dir = "assets/javascripts"
 # and then run:
 # sass-convert -R --from scss --to sass sass scss && rm -rf sass && mv scss sass
 
+# ブラウザでsassを検証する方法
+# http://liginc.co.jp/designer/archives/11623#a47
 sass_options = {:debug_info => true}

@@ -1,10 +1,10 @@
 namespace :sass do
-  desc "compile sass"
+  desc "Converts SCSS or Sass files to CSS."
   task :compile do
     sh "bundle exec compass compile --relative-assets"
   end
 
-  desc "clean cache file"
+  desc "Remove generated files and the sass cache."
   task :clean do
     sh "bundle exec compass clean"
   end

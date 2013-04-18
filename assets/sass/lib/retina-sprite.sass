@@ -1,0 +1,22 @@
+$map:                sprite-map("sprite/*.png")
+
+// TODO これが無くても動くように
+// 画像を書き出すためのダミーの記述
+#retina-sprite
+  bacground: $map
+
+$retina-sprite-path: sprite-path($map)
+$hoge: sprite_file($map, "apple")
+$retina-sprite-url:  image-url($retina-sprite-path)
+$retina-sprite-size: (image-width($retina-sprite-path) / 2) (image-height($retina-sprite-path) / 2)
+@mixin retina-sprite($name)
+  $position: sprite-position($map, $name)
+  $image:    sprite-file($map, $name)
+  display:   block
+  width:     image-width($image) / 2
+  height:    image-height($image) / 2
+  background:
+    repeat:   no-repeat
+    image:    $retina-sprite-url
+    size:     $retina-sprite-size
+    position: 0 (nth($position, 2) / 2)

@@ -1,0 +1,19 @@
+@debug image-url("apple.png")
+@debug image-width("apple.png")
+@debug image-height("apple.png")
+
+// 変数の定義
+$apple: "apple.png"
+div#apple
+  background:
+    // "apple.png"のurlを取得
+    url:  image-url($apple)
+    // 幅、高さを取得
+    size: image-width($apple) image-height($apple)
+
+$lemon: "lemon.png"
+div#lemon
+  background:
+    url:  image-url($lemon)
+    // 画像の幅、高さを2で割る
+    size: image-width($lemon)/2 image-height($lemon)/2

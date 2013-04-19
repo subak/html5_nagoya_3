@@ -49,3 +49,28 @@ $ rake sass:clean
 # 更に詳しい使い方など
 $ bundle exec sass --help
 ```
+
+ファイル構成
+============
+```
+├── assets
+│   └── sass                       # Sassのソースディレクトリ。ここにSassファイルを置く
+│       ├── demo.sass              # DEMOで使用したSassファイル
+│       └── lib
+│           └── retina-sprite.sass # Retina対応のSpriteを扱うmixinが定義されている
+└── public
+    ├── assets
+    │   └── stylesheets            # SassファイルからコンパイルされたCSSが保存される
+    │       └── demo.css           
+    │   └── images
+    │       └── sprite             # CSSスプライト生成時に結合される画像を入れておく
+    │           ├── apple.png
+    │           ├── cherries.png
+    │           ├── coconut.png
+    │           ├── grapes.png
+    │           ├── kiwi.png
+    │           ├── lemon.png
+    │           ├── lime.png
+    │           └── peach.png
+    └── index.html
+```
